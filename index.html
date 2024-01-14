@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form id="loginForm">
+      <div class="imag">
+        <img src="assets/image/Usuário.svg" />
+      </div>
+      <div class="i">
+        <label for="userEmail">Usuário: </label>
+        <input type="text" id="userEmail" name="userEmail" required />
+      </div>
+      <div class="i">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <p>
+        <a href="#">Esqueci senha</a>
+        <a href="assets/pages/Registro.html">fazer cadastro</a>
+      </p>
+      <button class="botao" type="button" onclick="submitForm()">Entrar</button>
+    </form>
+    <script type="text/javascript" src="assets/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #6566ff, #8f33ff);
+}
+form {
+  width: 550px;
+  background: transparente;
+  border-radius: 25px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.imag {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+img {
+  height: 250px;
+}
+.botao {
+  border: none;
+  margin: 20px;
+  float: right;
+  height: 50px;
+  width: 70px;
+  background: #121215;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.i {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+}
+label {
+  font-size: 25px;
+}
+input {
+  border-style: none;
+  padding: 5px;
+  font-size: 20px;
+  width: 95%;
+  border-radius: 8px;
+  color: #121215;
+  background: #ffffff;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+p {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  font-size: 20px;
+}
+p a {
+  text-decoration: none;
+}
+@media (max-width: 895px) {
+  form {
+    width: 370px;
+  }
+  label {
+    font-size: 20px;
+  }
+}
