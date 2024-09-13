@@ -10,7 +10,7 @@ function submitForm() {
     return;
   }
   // Envia dados para o back-end (usando o endpoint de registro do ReqRes)
-  fetch('http://172.21.16.1:3341/creteUser', {
+  fetch('http://172.21.16.1:3341/api/auth/registrar', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -18,9 +18,9 @@ function submitForm() {
     body: JSON.stringify({ nome, email, senha }),
   })
     .then(response => response.json())
-    /*.then(data => {
+    .then(data => {
       // Manipula a resposta do back-end
-      if (data.token) {
+      if (data) {
         // Registro bem-sucedido
         alert('Registro bem-sucedido. Faça login agora.');
         window.location.href = '../../index.html';
@@ -28,6 +28,6 @@ function submitForm() {
         // Manipula erros de registro
         alert('Erro no registro. Verifique suas informações.');
       }
-    })*/
+    })
     .catch(error => console.error('Erro:', error));
 }
